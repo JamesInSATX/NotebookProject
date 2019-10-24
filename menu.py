@@ -45,6 +45,7 @@ class Menu:
             print("{0}: {1}\n{2}".format(note.id, note.tags, note.memo))
 
     def search_notes(self):
+        """Calls search method of Notebook"""
         filter = input("Search for: ")
         notes = self.notebook.search(filter)
         self.show_notes(notes)
